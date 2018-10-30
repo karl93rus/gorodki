@@ -1,4 +1,5 @@
 const converter = require('./checkEndings');
+const goroda = require('./testArray');
 
 function cityDeclension(city) {
   const moreThanOneWord = /[А-Яа-я]\s[А-Яа-я]/u;
