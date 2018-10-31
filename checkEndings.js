@@ -47,7 +47,14 @@ function regcheck(city) {
     tmp.splice(city.length - 2, 2, 'ом');
     res = tmp.join('');
     return res;
-  }  {
+  } else if(/ел$/.test(city)) {
+    let res = '';
+    let tmp = [];
+    tmp = city.split('');
+    tmp.splice(city.length - 2, 2, 'ле');
+    res = tmp.join('');
+    return res;
+  } else {
     return city;
   }
 }
