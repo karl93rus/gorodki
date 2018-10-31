@@ -17,3 +17,6 @@
 отдаст "Москве".
 `sklonyator.incline('Краснодар');`
 отдаст "Краснодаре".
+
+### Репозиторий на github
+https://github.com/karl93rus/gorodki
