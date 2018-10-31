@@ -7,7 +7,7 @@
 `npm i sklonyator`
 
 ### Импортировать
-`const sklonyator = require('sklonyator');`
+`import sklonyator from 'sklonyator';`
 
 ### Чтобы изменить слово, необходимо вызвать метод
 `sklonyator.incline('cityName');`
