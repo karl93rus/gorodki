@@ -61,7 +61,7 @@ function regcheck(city) {
     let res = '';
     let tmp = [];
     tmp = city.split('');
-    tmp.splice(city.length - 2, 2, 'ах');
+    tmp.splice(city.length - 1, 1, 'ах');
     res = tmp.join('');
     return res;
   } else {
