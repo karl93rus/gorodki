@@ -11,11 +11,12 @@ function regcheck(city) {
             || /рг$/.test(city) || /ул$/.test(city) || /ток$/.test(city) 
             || /оп$/.test(city) || /с$/.test(city) || /т$/.test(city)
             || /еп$/.test(city) || /ин$/.test(city) || /ик$/.test(city)
-            || /ен$/.test(city) || /ол$/.test(city)) {
+            || /ен$/.test(city) || /ол$/.test(city) || /ом$/.test(city)
+            || /ач$/.test(city)) {
     let res = city;
     res += 'е';
     return res;
-  } else if(/рь$/.test(city) || /мь$/.test(city) || /ия$/.test(city)) {
+  } else if(/рь$/.test(city) || /мь$/.test(city) || /ия$/.test(city) || /нь$/.test(city)) {
     let res = '';
     let tmp = [];
     tmp = city.split('');
@@ -57,11 +58,25 @@ function regcheck(city) {
     tmp.splice(city.length - 2, 2, 'ле');
     res = tmp.join('');
     return res;
-  } else if(/ы$/.test(city)) {
+  } else if(/ы$/.test(city) || /и$/.test(city)) {
     let res = '';
     let tmp = [];
     tmp = city.split('');
     tmp.splice(city.length - 1, 1, 'ах');
+    res = tmp.join('');
+    return res;
+  } else if(/ец$/.test(city)) {
+    let res = '';
+    let tmp = [];
+    tmp = city.split('');
+    tmp.splice(city.length - 2, 2, 'це');
+    res = tmp.join('');
+    return res;
+  } else if(/яя$/.test(city)) {
+    let res = '';
+    let tmp = [];
+    tmp = city.split('');
+    tmp.splice(city.length - 2, 2, 'ей');
     res = tmp.join('');
     return res;
   } else {
