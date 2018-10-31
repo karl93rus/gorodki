@@ -1,5 +1,5 @@
 function regcheck(city) {
-  if(/а$/.test(city) || /ль$/.test(city) || /ня$/.test(city)) {
+  if(/а$/.test(city) || /ль$/.test(city) || /ня$/.test(city) || /ея$/.test(city)) {
     let res = '';
     let tmp = [];
     tmp = city.split('');
@@ -12,7 +12,7 @@ function regcheck(city) {
             || /оп$/.test(city) || /с$/.test(city) || /т$/.test(city)
             || /еп$/.test(city) || /ин$/.test(city) || /ик$/.test(city)
             || /ен$/.test(city) || /ол$/.test(city) || /ом$/.test(city)
-            || /ач$/.test(city)) {
+            || /ач$/.test(city) || /п$/.test(city)) {
     let res = city;
     res += 'е';
     return res;
@@ -65,6 +65,13 @@ function regcheck(city) {
     tmp.splice(city.length - 1, 1, 'ах');
     res = tmp.join('');
     return res;
+  } else if(/лец$/.test(city)) {
+    let res = '';
+    let tmp = [];
+    tmp = city.split('');
+    tmp.splice(city.length - 3, 3, 'льце');
+    res = tmp.join('');
+    return res;
   } else if(/ец$/.test(city)) {
     let res = '';
     let tmp = [];
@@ -77,6 +84,13 @@ function regcheck(city) {
     let tmp = [];
     tmp = city.split('');
     tmp.splice(city.length - 2, 2, 'ей');
+    res = tmp.join('');
+    return res;
+  } else if(/ая$/.test(city)) {
+    let res = '';
+    let tmp = [];
+    tmp = city.split('');
+    tmp.splice(city.length - 2, 2, 'ой');
     res = tmp.join('');
     return res;
   } else {

@@ -1,4 +1,5 @@
 const converter = require('./checkEndings');
+const gorod = require('./testArray');
 
 function cityDeclension(city) {
   const moreThanOneWord = /[А-Яа-я]\s[А-Яа-я]/u; // Город [пробел] Город (Нижний Новгород, Великий Устюг)
@@ -21,6 +22,10 @@ function cityDeclension(city) {
   } else {
     return converter.convert(city);
   }
+}
+
+for(let gor of gorod) {
+  console.log(cityDeclension(gor));
 }
 
 module.exports.incline = cityDeclension;
