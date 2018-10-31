@@ -6,6 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "города",
+    "склонения",
+    "падежи",
+    "россия",
+    "keyword",
+    "keywords",
+    "package",
+    "pkg"
+  ],
   "author": "Alex Sazonov",
   "license": "ISC"
 }
