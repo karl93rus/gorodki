@@ -20,3 +20,7 @@
 
 ### Репозиторий на github
 https://github.com/karl93rus/gorodki
+
+### Отзывы, предложения, сообщения об ошибках и багах присылайте на 
+karl93rus@gmail.com 
+или оставляйте в Issues
