@@ -8,7 +8,7 @@ function regcheck(city) {
     return res;
   } else if(/р$/.test(city) || /ск$/.test(city) || /д$/.test(city) || /ш$/.test(city) 
             || /ж$/.test(city) || /ов$/.test(city) || /ан$/.test(city) || /цк$/.test(city)
-            || /рг$/.test(city) || /ул$/.test(city) || /ток$/.test(city) 
+            || /г$/.test(city) || /ул$/.test(city) || /ток$/.test(city) 
             || /оп$/.test(city) || /с$/.test(city) || /т$/.test(city)
             || /еп$/.test(city) || /ин$/.test(city) || /ик$/.test(city)
             || /ен$/.test(city) || /ол$/.test(city) || /ом$/.test(city)
