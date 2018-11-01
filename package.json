@@ -1,6 +1,6 @@
 {
   "name": "sklonyator",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Склонятор названий городов",
   "main": "index.js",
   "scripts": {
