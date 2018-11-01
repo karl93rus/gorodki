@@ -1,5 +1,5 @@
 function regcheck(city) {
-  if(/а$/.test(city) || /ль$/.test(city) || /ня$/.test(city) || /ея$/.test(city)) {
+  if(/а$/.test(city) || /ль$/.test(city) || /ня$/.test(city) || /ея$/.test(city) || /ля$/.test(city)) {
     let res = '';
     let tmp = [];
     tmp = city.split('');
@@ -16,7 +16,7 @@ function regcheck(city) {
     let res = city;
     res += 'е';
     return res;
-  } else if(/рь$/.test(city) || /мь$/.test(city) || /ия$/.test(city) || /нь$/.test(city)) {
+  } else if(/рь$/.test(city) || /мь$/.test(city) || /ия$/.test(city) || /нь$/.test(city)|| /шь$/.test(city)) {
     let res = '';
     let tmp = [];
     tmp = city.split('');
